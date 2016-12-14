@@ -5,19 +5,16 @@ layout: default
 <div class="home">
 
   {{ content }}
-  <h1 class="page-heading">Posts</h1>
-  <!--<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>-->
+  <h1>Featured post</h1>
+  {% for post in site.posts limit:1 %}
+    <h2>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      {% include player.html mp3Url=post.podcastMP3 %}
+    </h2>
+  {% endfor %}
 
+  <h2 class="page-heading">Posts</h1>
   <!-- This loops through the paginated posts -->
   <ul class="post-list">
     {% for post in paginator.posts %}
