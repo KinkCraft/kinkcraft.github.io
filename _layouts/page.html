@@ -1,14 +1,39 @@
 ---
 layout: default
 ---
-<article class="post">
+<!-- ===== MAIN ===== -->
+		<main id="main" class="main">
+		
+			<!-- ===== PAGE HEADER ===== -->
+			<header class="page-header" style="background-image: url(assets/img/single-background.jpg)">
+				<div class="page-header-inner">
+					<div class="container">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+						<!-- ===== BREADCRUMB ===== -->
+						<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+							<li itemprop="itemListElement"><a href="/">Home</a></li>
+							<li itemprop="itemListElement"><a href="#">{{page.title}}</a></li>
+						</ol>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+						<!-- ===== PAGE HEADER CONTENT ===== -->
+						<div class="page-header-content text-center">
+							<h2>{{page.title}}</h2>
+						</div>
 
-</article>
+					</div>
+				</div>
+			</header>
+			
+			<!-- ===== SECTION ===== -->
+			<section class="section-negative">
+				<div class="container">
+					
+					<!-- ===== PAGE CONTENT ===== -->
+					<div class="page-content mt-60">
+                        {{content}}
+					</div>
+					
+				</div>
+			</section>
+						
+		</main>

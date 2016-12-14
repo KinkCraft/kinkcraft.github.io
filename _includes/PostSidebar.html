@@ -1,0 +1,25 @@
+<!-- ===== PODCAST SIDEBAR ===== -->
+<div class="page-sidebar">
+
+    <!-- ===== SIDEBAR WIDGET ===== -->
+    <div class="sidebar-widget">
+        <h2 class="title-separator">Share this podcast</h2>
+        <ul class="social-list colored">
+            <li class="social-item facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.reidark.com.br/themes/soundcast" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="social-item twitter"><a href="https://twitter.com/home?status=http://www.reidark.com.br/themes/soundcast" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-item google"><a href="https://plus.google.com/share?url=http://www.reidark.com.br/themes/soundcast" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li class="social-item email"><a href="mailto:?&subject=Soundcast - Theme" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    
+    <!-- ===== TAGS ===== -->
+    <div class="sidebar-widget">
+        <h2 class="title-separator">Tags</h2>
+        <ul class="tag-list">
+            {% for tag in page.tags %}
+                <li class="tag-item"><a href="#" rel="tag">{{tag}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+</div>

@@ -1,23 +1,74 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
+	{% include head.html %}	
 
-  {% include head.html %}
+	<body itemscope itemtype="http://schema.org/WebSite">
+		
+		<!-- ===== HEADER ===== -->
+		<header class="header absolute" itemscope itemtype="http://schema.org/Organization">
+			<div class="container">
+			
+				<!-- ===== LOGO ===== -->
+				<h1 class="logo"><a href="/"><img itemprop="logo" src="/assets/img/logo.png" alt="Soundcast - Podcast Responsive Theme" title="Soundcast - Podcast Responsive Theme" /></a></h1>
+				
+				<!-- ===== NAVIGATION ===== -->
+				<nav class="navigation">
+					<!-- ===== MENU ===== -->
+					<ul class="menu">
+						<li class="menuitem active"><a href="/">Home</a></li>
+						<li class="menuitem"><a href="/podcasts.html">Podcasts</a></li>
+						<!--<li class="menuitem dropdown">
+							<a href="#">Pages</a>
+							<ul class="droplist">
+								<li class="droplist-item"><a href="columns.html">Columns</a></li>
+								<li class="droplist-item"><a href="shortcodes.html">Shortcodes</a></li>
+								<li class="droplist-item"><a href="typography.html">Typography</a></li>
+								<li class="droplist-item"><a href="single-page.html">Single Page</a></li>
+								<li class="droplist-item"><a href="sticky-header.html">Sticky Header</a></li>
+								<li class="droplist-item"><a href="static-header.html">Static Header</a></li>
+								<li class="droplist-item"><a href="404.html">404</a></li>
+							</ul>
+						</li>-->
+						<li class="menuitem"><a href="about-us.html">About Us</a></li>
+						<li class="menuitem"><a href="contact.html">Contact</a></li>
+					</ul>
+					<!-- ===== HAMBURGUER ICON ===== -->
+					<a href="#" class="btn-hamburguer-menu"><i class="fa fa-bars"></i></a>
+				</nav>
+				
+			</div>
+		</header>
+		
+		<!-- ===== MAIN ===== -->
+		{{ content }}
+		
+		{% include footer.html %}
+		
+		<!-- =================================== -->
+		<!-- 			  SCRIPTS 				 -->
+		<!-- =================================== -->
+		
+		<!-- JQUERY -->
+		<script src="/assets/js/jquery-1.11.min.js"></script>
+		
+		<!-- BOOTSTRAP JS -->
+		<script src="/assets/js/bootstrap.min.js"></script>
+		
+		<!-- MEDIA ELEMENT -->
+		<script src="/assets/js/mediaelement-and-player.min.js"></script>
+		
+		<!-- MAGNIFIC POPUP -->
+		<script src="/assets/js/magnific-popup.min.js"></script>
+		
+		<!-- FORM VALIDATE -->
+		<script src="/assets/js/validate.min.js"></script>
+		
+		<!-- PLACEHOLDER FOR IE -->
+		<script src="/assets/js/placeholder.min.js"></script>
+		
+		<!-- THEME JS -->
+		<script src="/assets/js/main.js"></script>
 
-  <body>
-
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
+	</body>
 
 </html>
