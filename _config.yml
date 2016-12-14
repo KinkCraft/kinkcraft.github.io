@@ -20,3 +20,13 @@ email: "hello@garrettboatman.com" # This is my real email address. Please don't 
 #    style: :compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+compress_html:
+  clippings: []
+  comments: all
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
