@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "The falling star"
 date:   2016-12-03 12:00:00 +0000
 categories: podcast

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "Welcome to the party"
 date:   2016-12-01 12:00:00 +0000
 categories: podcast

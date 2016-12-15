@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "The cylinder opens"
 date:   2016-12-05 12:00:00 +0000
 categories: podcast

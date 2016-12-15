@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "The heat-ray in Chobham road"
 date:   2016-12-07 12:00:00 +0000
 categories: podcast

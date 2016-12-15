@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "The heat ray"
 date:   2016-12-06 12:00:00 +0000
 categories: podcast

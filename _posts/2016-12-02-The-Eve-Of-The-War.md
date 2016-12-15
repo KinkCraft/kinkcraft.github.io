@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "The eve of the war"
 date:   2016-12-02 12:00:00 +0000
 categories: podcast

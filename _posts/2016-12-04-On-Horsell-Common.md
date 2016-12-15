@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast
 title:  "On Horsel Common"
 date:   2016-12-04 12:00:00 +0000
 categories: podcast
