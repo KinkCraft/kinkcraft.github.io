@@ -35,5 +35,15 @@ compress_html:
 paginate: 10
 paginate_path: "/podcast/page:num/"
 
+topNavigation:
+- text: Home
+  url: /
+- text: podcast
+  url: /podcast/
+- text: About Us
+  url: /about-us.html
+- text: Contact
+  url: /contact.html
+
 
 gems: [jekyll-paginate]

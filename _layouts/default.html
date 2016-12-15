@@ -18,10 +18,18 @@ layout: compress
 				<nav class="navigation">
 					<!-- ===== MENU ===== -->
 					<ul class="menu">
-						<li class="menuitem active"><a href="/">Home</a></li>
+						<!--<li class="menuitem active"><a href="/">Home</a></li>
 						<li class="menuitem"><a href="/podcast">Podcast</a></li>
 						<li class="menuitem"><a href="/about-us.html">About Us</a></li>
-						<li class="menuitem"><a href="/contact.html">Contact</a></li>
+						<li class="menuitem"><a href="/contact.html">Contact</a></li>-->
+						{% for nav in site.topNavigation %}
+							{% assign css = 'menuitem' %}
+							{% if page.url == nav.url%}
+								{% assign css = 'menuitem active' %}
+							{% endif %}
+
+							<li class="{{css}}"><a href="{{nav.url}}">{{nav.text}}</a></li>
+						{% endfor %}						
 					</ul>
 					<!-- ===== HAMBURGUER ICON ===== -->
 					<a href="#" class="btn-hamburguer-menu"><i class="fa fa-bars"></i></a>
