@@ -9,192 +9,160 @@ runtime: 41
 episode: 1
 heroImage: "/assets/img/ep1/hero.jpg"    #1920x1080
 ---
-# Example Output
+An h1 header
+============
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Paragraphs are separated by a blank line.
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
+2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+look like:
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+  * this one
+  * that one
+  * the other one
 
-You can also:
-  - Import and save files from GitHub, Dropbox, Google Drive and One Drive
-  - Drag and drop files into Dillinger
-  - Export documents as Markdown, HTML and PDF
+Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-### Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-* [AngularJS] - HTML enhanced for web apps!
-* [Ace Editor] - awesome web-based text editor
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework [@tjholowaychuk]
-* [Gulp] - the streaming build system
-* [keymaster.js] - awesome keyboard handler lib by [@thomasfuchs]
-* [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-### Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Download and extract the [latest pre-built release](https://github.com/joemccann/dillinger/releases).
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ npm run predeploy
-$ NODE_ENV=production node app
-```
-
-### Plugins
-
-Dillinger is currently extended with the following plugins
-
-* Dropbox
-* Github
-* Google Drive
-* OneDrive
-
-Readmes, how to use them in your own application can be found here:
-
-* [plugins/dropbox/README.md] [PlDb]
-* [plugins/github/README.md] [PlGh]
-* [plugins/googledrive/README.md] [PlGd]
-* [plugins/onedrive/README.md] [PlOd]
-
-### Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantanously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma start
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```sh
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 80, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
-
-```sh
-cd dillinger
-npm run-script build-docker
-```
-This will create the dillinger image and pull in the necessary dependencies. Moreover, this uses a _hack_ to get a more optimized `npm` build by copying the dependencies over and only installing when the `package.json` itself has changed.  Look inside the `package.json` and the `Dockerfile` for more details on how this works.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 80 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:latest
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-#### Kubernetes + Google Cloud
-
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
+Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺
 
 
-#### docker-compose.yml
 
-Change the path for the nginx conf mounting path to your full path, not mine!
+An h2 header
+------------
 
-### N|Solid and NGINX
+Here's a numbered list:
 
-More details coming soon.
+ 1. first item
+ 2. second item
+ 3. third item
+
+Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here's a code sample:
+
+    # Let me re-iterate ...
+    for i in 1 .. 10 { do-something(i) }
+
+As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:
+
+~~~
+define foobar() {
+    print "Welcome to flavor country!";
+}
+~~~
+
+(which makes copying & pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:
+
+~~~python
+import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+~~~
 
 
-### Todos
 
- - Write Tests
- - Rethink Github Save
- - Add Code Comments
- - Add Night Mode
+### An h3 header ###
 
-License
-----
+Now a nested list:
 
-MIT
+ 1. First, get these ingredients:
 
+      * carrots
+      * celery
+      * lentils
 
-**Free Software, Hell Yeah!**
+ 2. Boil some water.
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+ 3. Dump everything in the pot and follow
+    this algorithm:
 
+        find wooden spoon
+        uncover pot
+        stir
+        cover pot
+        balance wooden spoon precariously on pot handle
+        wait 10 minutes
+        goto first step (or shut off burner when done)
 
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [@thomasfuchs]: <http://twitter.com/thomasfuchs>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [keymaster.js]: <https://github.com/madrobby/keymaster>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
+    Do not bump wooden spoon or it will fall.
 
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]:  <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
+Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).
+
+Here's a link to [a website](http://foo.bar), to a [local
+doc](local-doc.html), and to a [section heading in the current
+doc](#an-h2-header). Here's a footnote [^1].
+
+[^1]: Footnote text goes here.
+
+Tables can look like this:
+
+size  material      color
+----  ------------  ------------
+9     leather       brown
+10    hemp canvas   natural
+11    glass         transparent
+
+Table: Shoes, their sizes, and what they're made of
+
+(The above is the caption for the table.) Pandoc also supports
+multi-line tables:
+
+--------  -----------------------
+keyword   text
+--------  -----------------------
+red       Sunsets, apples, and
+          other red or reddish
+          things.
+
+green     Leaves, grass, frogs
+          and other things it's
+          not easy being.
+--------  -----------------------
+
+A horizontal rule follows.
+
+***
+
+Here's a definition list:
+
+apples
+  : Good for making applesauce.
+oranges
+  : Citrus!
+tomatoes
+  : There's no "e" in tomatoe.
+
+Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)
+
+Here's a "line block":
+
+| Line one
+|   Line too
+| Line tree
+
+and images can be specified like so:
+
+![example image](example-image.jpg "An exemplary image")
+
+Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:
+
+$$I = \int \rho R^{2} dV$$
+
+And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
