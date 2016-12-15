@@ -9,6 +9,8 @@ runtime: 41
 episode: 1
 heroImage: "/assets/img/ep1/hero.jpg"    #1920x1080
 ---
+Editing this file here in **GitHub** to see if it works, looks like it does :D
+
 Enim pariatur velit ut velit. Velit anim enim nulla culpa incididunt irure cillum labore ex voluptate sit. Sit amet exercitation laborum reprehenderit adipisicing est voluptate in adipisicing.
 
 Do do deserunt et anim id nulla. Tempor ut elit tempor adipisicing est exercitation aliquip est culpa consectetur magna fugiat velit. Anim irure nostrud esse qui duis magna mollit. Exercitation aute aliqua excepteur deserunt.
