@@ -9,7 +9,7 @@ var runSequence = require('run-sequence');
 var del = require('del');
 
 gulp.task('build-clean', function() {
-  return del(['./assets/js/site*.js','./assets/css/site.css'])
+  return del(['./assets/js/site*.js','./assets/css/site-min.css'])
 });
 
 gulp.task('build-scripts', function() {
@@ -21,7 +21,7 @@ gulp.task('build-scripts', function() {
 
 gulp.task('build-styles', function() {
   return gulp.src('./assets/css/*.css')
-    .pipe(concat('site.css'))
+    .pipe(concat('site-min.css'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('./assets/css'))
 });
