@@ -1,0 +1,58 @@
+---
+layout: default
+title: Podcast
+---
+<!-- ===== LASTEST PODCAST (HERO) ===== -->
+{% include LatestPodcast.html %}
+
+<main id="main" class="main">
+
+    <!-- ===== PODCAST LIST ===== -->
+    <section id="episodes" class="section-positive">
+        <div class="container">
+            <!-- ===== SECTION TITLE ===== -->
+            <h2 class="title-default">Episodes</h2>
+        
+            <div class="row">                                
+                
+                {% for post in paginator.posts%}
+                <div class="col-sm-12 mb-40">
+                    {% include PodcastCard.html cardType="full" showExcerpt=true post=post %}
+                </div>
+                {% endfor %}             
+
+            
+                {% if paginator.total_pages > 1 %}
+                <div class="col-sm-12 text-center mb-50">
+                    <ol class="pagination">
+                        {% if paginator.previous_page %}
+                            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}#episodes">&laquo; Prev</a></li>
+                        {% else %}
+                            <li><span>&laquo; Prev</span></li>
+                        {% endif %}
+
+                        {% for page in (1..paginator.total_pages) %}
+                            {% if page == paginator.page %}
+                            <li><span>{{ page }}</span></li>
+                            {% elsif page == 1 %}
+                            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}#episodes">{{ page }}</a></li>
+                            {% else %}
+                            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}#episodes">{{ page }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if paginator.next_page %}
+                            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}#episodes">Next &raquo;</a></li>
+                        {% else %}
+                            <li><span>Next &raquo;</span></li>
+                        {% endif %}
+                    </ol>
+                </div>
+                {% endif %}
+            </div>
+
+        </div>
+    </section>
+
+    {% include NewsletterSignup.html %}
+</main>

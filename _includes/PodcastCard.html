@@ -1,0 +1,26 @@
+<!--
+Podcast Card - Shows a podcast card where you need it in what type you need
+===
+cardType="full"     - The type of card to show. Can be: "full", "boxed", or "sidebar" 
+showExcerpt=true    - Should the post excerpt be shown 
+post=post           - That post to be shown
+-->
+
+<div class="podcast-card {{include.cardType}}">
+    <figure class="podcast-image"><a href="{{ include.post.url | relative_url }}"><img src="{{include.post.heroImage}}" alt="Seattle" title="Seattle" /></a></figure>
+    <div class="podcast-content">
+        <span class="podcast-date">{{ include.post.date | date: '%B %d, %Y' }}</span>
+        <h2 class="podcast-title"><a href="{{ include.post.url | relative_url }}">Episode #{{include.post.episode}} - {{include.post.title}}</a></h2>
+        {% if include.showExcerpt %}
+            <p class="podcast-excerpt"><a href="{{ include.post.url | relative_url }}">{{include.post.excerpt}}</a></p>
+        {% endif %}        
+        <ul class="podcast-meta">
+            <li class="item"><a href="#" class="podcast-tag" rel="tag">{{ include.post.categories | first }}</a></li>
+            <li class="item"><i class="fa fa-clock-o"></i> {{include.post.runtime}} mins.</li>
+            <li class="item"><a href="{{ include.post.url | relative_url }}" class="podcast-play"><i class="fa fa-play"></i> Play Episode</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
