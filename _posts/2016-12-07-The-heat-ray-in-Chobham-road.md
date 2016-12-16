@@ -12,6 +12,9 @@ heroImage: "/assets/img/ep2/hero.jpg"    #1920x1080
 It is still a matter of wonder how the Martians are able to slay
 men so swiftly and so silently.
 
+This is a test to see if just mentioning someone by name like @KinkCraft is enough to make it
+link through to the right page.
+
 Many think that in some way they are able to generate an intense heat in 
 a chamber of practically absolute non-conductivity. This intense heat they 
 project in a parallel beam against any object they choose, by means of a 
