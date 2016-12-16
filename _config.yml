@@ -1,19 +1,8 @@
 # Site settings
 title: Sexy Business
-tagline: "Teaching you how to start and run your sexy business"
+description: "Teaching you how to start and run your sexy business"
 url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
-
-# Social
-socialimg: /img/social.jpg # be sure to change this image
-facebook: fbusername
-twitter: twusername
-github: ghusername
-googleplus: gusername
-instagram: igusername
-
-# Contact
-phone: "" # This is my real number. You should text me.
-email: "" # This is my real email address. Please don't email me.
+author: "Sexy Business"
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
@@ -47,7 +36,31 @@ topNavigation:
 gems:
 - jekyll-paginate
 - jekyll-mentions
+- jekyll-seo-tag
 
 # Gem configurations
 jekyll-mentions:
   base_url: https://twitter.com
+
+# seo
+twitter:
+  username: 
+
+facebook:
+  app_id: 
+  publisher:
+  admins: 
+
+#social:
+#  name: Ben Balter
+#  links:
+#    - https://twitter.com/BenBalter
+#    - https://www.facebook.com/ben.balter
+#    - https://www.linkedin.com/in/BenBalter
+#    - https://plus.google.com/+BenBalter
+#    - https://github.com/benbalter
+#    - https://keybase.io/benbalter
+
+logo: "/assets/img/logo.png"
+
+google_site_verification: ""

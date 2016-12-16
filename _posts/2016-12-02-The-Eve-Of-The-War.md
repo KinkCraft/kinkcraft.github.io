@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [news, podcast, business]
 runtime: 41
 episode: 2
-heroImage: "/assets/img/ep2/hero.jpg"    #1920x1080
+image: "/assets/img/ep2/hero.jpg"    #1920x1080
 ---
 No one would have believed in the last years of the nineteenth
 century that this world was being watched keenly and closely by

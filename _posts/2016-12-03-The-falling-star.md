@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [podcast, business]
 runtime: 41
 episode: 3
-heroImage: "/assets/img/ep3/hero.jpg"    #1920x1080
+image: "/assets/img/ep3/hero.jpg"    #1920x1080
 ---
 Then came the night of the first falling star.  
 

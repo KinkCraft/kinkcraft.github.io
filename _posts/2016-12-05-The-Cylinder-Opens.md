@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [podcast, business]
 runtime: 41
 episode: 5
-heroImage: "/assets/img/ep5/hero.jpg"    #1920x1080
+image: "/assets/img/ep5/hero.jpg"    #1920x1080
 ---
 When I returned to the common the sun was setting.  Scattered groups
 were hurrying from the direction of Woking,

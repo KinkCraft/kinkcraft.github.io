@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [news, podcast, business]
 runtime: 41
 episode: 1
-heroImage: "/assets/img/ep1/hero.jpg"    #1920x1080
+image: "/assets/img/ep1/hero.jpg"    #1920x1080
 ---
 An h1 header
 ============

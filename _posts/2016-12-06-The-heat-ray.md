@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [podcast, business]
 runtime: 41
 episode: 6
-heroImage: "/assets/img/ep1/hero.jpg"    #1920x1080
+image: "/assets/img/ep1/hero.jpg"    #1920x1080
 ---
 After the glimpse I'd had of the Martians emerging from the
 cylinder in which they had come to the earth from their planet, 

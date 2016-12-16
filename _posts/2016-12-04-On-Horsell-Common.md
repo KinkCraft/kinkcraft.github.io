@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [news, podcast, business]
 runtime: 41
 episode: 4
-heroImage: "/assets/img/ep4/hero.jpg"    #1920x1080
+image: "/assets/img/ep4/hero.jpg"    #1920x1080
 ---
 I found a little crowd of perhaps twenty people surrounding the
 huge hole in which the cylinder lay.
