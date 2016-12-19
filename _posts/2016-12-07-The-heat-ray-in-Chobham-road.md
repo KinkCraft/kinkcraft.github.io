@@ -7,7 +7,7 @@ podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [podcast, business]
 runtime: 41
 episode: 7
-image: "/assets/img/ep2/hero.jpg"    #1920x1080
+image: "/assets/img/ep6/hero.jpg"    #1920x1080
 ---
 It is still a matter of wonder how the Martians are able to slay
 men so swiftly and so silently.
