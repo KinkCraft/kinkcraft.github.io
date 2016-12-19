@@ -1,13 +1,13 @@
 ---
 layout: podcast
-title:  "The heat-ray in Chobham road"
+title:  "Being Authentic"
 date:   2016-12-07 12:00:00 +0000
 categories: podcast
 podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [podcast, business]
 runtime: 41
 episode: 7
-image: "/assets/img/ep6/hero.jpg"    #1920x1080
+image: "/assets/img/ep6/BeingAuthentic.jpg"    #1920x1080
 ---
 It is still a matter of wonder how the Martians are able to slay
 men so swiftly and so silently.

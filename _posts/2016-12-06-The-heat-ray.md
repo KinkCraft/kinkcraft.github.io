@@ -1,13 +1,13 @@
 ---
 layout: podcast
-title:  "The heat ray"
+title:  "Getting Started"
 date:   2016-12-06 12:00:00 +0000
 categories: podcast
 podcastaudio: http://traffic.libsyn.com/kinkcraft/12_Gifts_for_Christmas.mp3
 tags: [podcast, business]
 runtime: 41
 episode: 6
-image: "/assets/img/ep1/hero.jpg"    #1920x1080
+image: "/assets/img/Getting-Started.jpg"    #1920x1080
 ---
 After the glimpse I'd had of the Martians emerging from the
 cylinder in which they had come to the earth from their planet, 
